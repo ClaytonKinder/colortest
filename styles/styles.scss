@@ -138,3 +138,46 @@ html, body {
 .color__block--11 {
   background-color: black;
 }
+
+/*******************
+  QUERIES
+*******************/
+
+@media screen and (max-width: 1340px) {
+  .test {
+    height: 600px;
+
+    > div {
+      height: 150px;
+      width: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .test {
+    height: 900px;
+
+    > div {
+      height: 200px;
+      width: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .test {
+    height: auto;
+    padding: 40px 20px;
+
+    > div {
+      height: 200px;
+      width: 100%;
+      margin-bottom: 10px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
